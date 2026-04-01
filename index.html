@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kid's Care Clinic – Child & Eye Care Center in Navsari, Gujarat. Expert pediatric and eye care by Dr. Mrunal Shah (MD Pediatrician) and Dr. Vibha Shah (MS Eye Surgeon). Book appointment now.">
+  <meta name="keywords" content="kids clinic Navsari, child doctor Navsari, eye care Navsari, pediatrician Gujarat, Dr Mrunal Shah, Dr Vibha Shah">
+  <meta property="og:title" content="Kid's Care Clinic – Child & Eye Care Center, Navsari">
+  <meta property="og:description" content="Complete child healthcare + pediatric eye care under one roof in Navsari, Gujarat.">
+  <meta name="theme-color" content="#2B9FD1">
+  <title>Kid's Care Clinic – Child &amp; Eye Care Center | Navsari, Gujarat</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🏥</text></svg>">
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">‹</button>
+  <img class="lb-img" id="lb-img" src="" alt="Gallery photo">
+  <button class="lb-nav lb-next" id="lb-next" aria-label="Next">›</button>
+  <div class="lb-caption" id="lb-caption"></div>
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<div class="whatsapp-float" id="wa-float" role="button" aria-label="Chat on WhatsApp" tabindex="0">
+  <div class="whatsapp-tooltip">Book via WhatsApp</div>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.139.565 4.147 1.547 5.878L0 24l6.3-1.526A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.836 9.836 0 01-5.033-1.385l-.36-.214-3.737.905.962-3.633-.235-.373A9.778 9.778 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182c5.427 0 9.818 4.391 9.818 9.818 0 5.427-4.391 9.818-9.818 9.818z"/>
+  </svg>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo" aria-label="Kid's Care Clinic Home">
+      <div class="nav-logo-icon">🏥</div>
+      <div class="nav-logo-text">
+        <strong>Kid's Care Clinic</strong>
+        <span>Child &amp; Eye Care Center</span>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#about">Doctors</a></li>
+      <li><a href="#services">Services</a></li>
+      <li class="nav-dropdown-wrap">
+        <a href="#vax-tracker" class="nav-dropdown-trigger">🛠️ Parent Tools ▾</a>
+        <div class="nav-dropdown">
+          <a href="#vax-tracker">💉 Vaccination Tracker</a>
+          <a href="#symptoms">🤒 Symptoms Guide</a>
+          <a href="#bmi-calc">📏 BMI Calculator</a>
+          <a href="#dose-calc">💊 Dose Guide</a>
+          <a href="#emergency">🚨 Emergency Guide</a>
+        </div>
+      </li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#location">Contact</a></li>
+      <li><a href="#appointment" class="nav-book">📅 Book Now</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+  <a href="#about">Our Doctors</a>
+  <a href="#services">Services</a>
+  <a href="#vax-tracker">💉 Vaccination Tracker</a>
+  <a href="#symptoms">🤒 Symptoms Guide</a>
+  <a href="#bmi-calc">📏 BMI Calculator</a>
+  <a href="#dose-calc">💊 Dose Guide</a>
+  <a href="#emergency">🚨 Emergency Guide</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#location">Contact</a>
+  <a href="#appointment" class="mobile-book">📅 Book Appointment</a>
+</div>
+
+<main>
+
+<!-- ══════════════════════════════
+     HERO SECTION
+     ══════════════════════════════ -->
+<section id="hero" aria-labelledby="hero-title">
+  <div class="hero-bg">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+  </div>
+  <!-- Floating medical icons -->
+  <div class="hero-float-el hf1" aria-hidden="true">🩺</div>
+  <div class="hero-float-el hf2" aria-hidden="true">👁️</div>
+  <div class="hero-float-el hf3" aria-hidden="true">💊</div>
+  <div class="hero-float-el hf4" aria-hidden="true">❤️</div>
+  <div class="hero-float-el hf5" aria-hidden="true">⭐</div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Navsari's Trusted Child & Eye Care Clinic
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          Complete Care for Your<br>
+          <span class="hl-blue">Child's Health</span> &amp;<br>
+          <span class="hl-green">Vision</span>
+        </h1>
+        <p class="hero-sub">
+          Expert pediatric &amp; eye care under one roof in Navsari. 
+          Dr. Mrunal Shah &amp; Dr. Vibha Shah provide the best, most compassionate healthcare for your little ones.
+        </p>
+        <div class="hero-pills">
+          <span class="hero-pill">👶 Child Specialist</span>
+          <span class="hero-pill">👁️ Eye Surgeon</span>
+          <span class="hero-pill">💉 Vaccination</span>
+          <span class="hero-pill">🏥 Evening OPD</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#appointment" class="btn btn-primary btn-lg">📅 Book Appointment</a>
+          <a href="tel:+919898898989" class="btn btn-secondary-outline btn-lg">📞 Call Now</a>
+          <a href="https://wa.me/919898898989" class="btn btn-wa btn-lg" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.139.565 4.147 1.547 5.878L0 24l6.3-1.526A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-avatars">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&auto=format&q=80" alt="Happy parent 1">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop&auto=format&q=80" alt="Happy parent 2">
+            <img src="https://images.unsplash.com/photo-1531983955165-e2c3ba14609a?w=80&h=80&fit=crop&auto=format&q=80" alt="Happy parent 3">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=80&h=80&fit=crop&auto=format&q=80" alt="Happy parent 4">
+          </div>
+          <p class="hero-trust-text"><strong>5,000+ happy families</strong><br>trust us for their children's health</p>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="hero-visual">
+        <div class="hero-illustration-wrapper">
+          <div class="hero-main-img">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&h=600&fit=crop&auto=format&q=85" alt="Doctor caring for child at Kid's Care Clinic" loading="eager">
+          </div>
+          <!-- Floating info cards -->
+          <div class="hcard hcard-1">
+            <div class="hcard-icon hci-green">👶</div>
+            <div class="hcard-info">
+              <strong>Pediatric Care</strong>
+              <span>Dr. Mrunal Shah MD</span>
+            </div>
+          </div>
+          <div class="hcard hcard-2">
+            <div class="hcard-icon hci-blue">👁️</div>
+            <div class="hcard-info">
+              <strong>Eye Specialist</strong>
+              <span>Dr. Vibha Shah MS</span>
+            </div>
+          </div>
+          <div class="hcard hcard-3">
+            <div class="hcard-icon hci-warm">⭐</div>
+            <div class="hcard-info">
+              <strong>5,000+ Children</strong>
+              <span>Treated Successfully</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     STATS BAND
+     ══════════════════════════════ -->
+<section id="stats" aria-label="Clinic statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-num" data-count="5000" data-suffix="+">0</span>
+        <p class="stat-label">Happy Children Treated</p>
+      </div>
+      <div class="stat-item reveal d1">
+        <span class="stat-num" data-count="10" data-suffix="+">0</span>
+        <p class="stat-label">Years of Experience</p>
+      </div>
+      <div class="stat-item reveal d2">
+        <span class="stat-num" data-count="98" data-suffix="%">0</span>
+        <p class="stat-label">Parent Satisfaction Rate</p>
+      </div>
+      <div class="stat-item reveal d3">
+        <span class="stat-num" data-count="2" data-suffix="">0</span>
+        <p class="stat-label">Specialist Doctors</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     ABOUT DOCTORS
+     ══════════════════════════════ -->
+<section id="about" class="section-pad" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-header">
+      <div class="about-left reveal-l">
+        <p class="section-label">Meet Our Doctors</p>
+        <h2 class="section-title" id="about-title">Expert Care,<br><em>Compassionate Hearts</em></h2>
+      </div>
+      <div class="about-right reveal-r">
+        <p class="section-desc">Our clinic is led by two highly qualified specialists — a Pediatrician and an Eye Surgeon — providing comprehensive, coordinated care for your child under one roof. No referrals needed.</p>
+        <a href="#appointment" class="btn btn-primary" style="margin-top:1.25rem;">📅 Book a Consultation</a>
+      </div>
+    </div>
+
+    <div class="doctors-grid">
+      <!-- Dr. Mrunal Shah -->
+      <article class="doctor-card reveal-l">
+        <div class="doctor-img-wrap">
+          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=700&h=500&fit=crop&auto=format&q=85" alt="Dr. Mrunal Shah - MD Pediatrician">
+          <div class="doctor-img-gradient"></div>
+          <div class="doctor-img-info">
+            <span class="doctor-specialty-badge">MD Pediatrician</span>
+            <h3 class="doctor-name-overlay">Dr. Mrunal Shah</h3>
+            <p class="doctor-qual-overlay">MD (Pediatrics) • Child Specialist</p>
+          </div>
+        </div>
+        <div class="doctor-card-body">
+          <p class="doctor-bio">Dr. Mrunal Shah is a highly experienced MD Pediatrician with over 10 years of dedicated service in child healthcare. He specializes in neonatal care, childhood development, nutrition, and managing complex pediatric conditions with a warm, family-friendly approach.</p>
+          <div class="doctor-expertise">
+            <span class="exp-tag green">Newborn Care</span>
+            <span class="exp-tag green">Vaccination</span>
+            <span class="exp-tag green">Growth Monitoring</span>
+            <span class="exp-tag green">Nutrition</span>
+            <span class="exp-tag green">Fever & Infections</span>
+          </div>
+          <div class="doctor-metrics">
+            <div class="dm-num">10+<span class="dm-lbl">Years</span></div>
+            <div class="dm-num">3000+<span class="dm-lbl">Children</span></div>
+            <div class="dm-num">⭐ 4.9<span class="dm-lbl">Rating</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dr. Vibha Shah -->
+      <article class="doctor-card reveal-r">
+        <div class="doctor-img-wrap">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&h=500&fit=crop&auto=format&q=85" alt="Dr. Vibha Shah - MS Eye Surgeon">
+          <div class="doctor-img-gradient"></div>
+          <div class="doctor-img-info">
+            <span class="doctor-specialty-badge" style="background:rgba(43,159,209,0.3);">MS Eye Surgeon</span>
+            <h3 class="doctor-name-overlay">Dr. Vibha Shah</h3>
+            <p class="doctor-qual-overlay">MS (Ophthalmology) • Eye Specialist</p>
+          </div>
+        </div>
+        <div class="doctor-card-body">
+          <p class="doctor-bio">Dr. Vibha Shah is an accomplished MS Eye Surgeon specializing in pediatric ophthalmology. She expertly diagnoses and treats conditions like childhood myopia, amblyopia (lazy eye), squint, and performs precise eye surgeries with a gentle, child-sensitive approach.</p>
+          <div class="doctor-expertise">
+            <span class="exp-tag">Eye Checkup</span>
+            <span class="exp-tag">Squint Treatment</span>
+            <span class="exp-tag">Lazy Eye</span>
+            <span class="exp-tag">Vision Testing</span>
+            <span class="exp-tag">Eye Surgery</span>
+          </div>
+          <div class="doctor-metrics">
+            <div class="dm-num">8+<span class="dm-lbl">Years</span></div>
+            <div class="dm-num">2000+<span class="dm-lbl">Patients</span></div>
+            <div class="dm-num">⭐ 4.8<span class="dm-lbl">Rating</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SERVICES SECTION
+     ══════════════════════════════ -->
+<section id="services" class="section-pad" aria-labelledby="services-title">
+  <div class="container">
+    <div class="services-header">
+      <div class="reveal-l">
+        <p class="section-label">What We Offer</p>
+        <h2 class="section-title" id="services-title">Complete <em>Healthcare</em><br>Services for Kids</h2>
+      </div>
+      <div class="reveal-r">
+        <p class="section-desc">From routine checkups to specialized eye care, we offer a full spectrum of healthcare services designed specifically for children. Hover over each card to learn more.</p>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <!-- 1 -->
+      <div class="svc-card t-blue" role="button" aria-label="Child Checkup service">
+        <div class="svc-inner">
+          <div class="svc-front">
+            <div class="svc-icon">👶</div>
+            <h3 class="svc-title">Child Health Checkup</h3>
+            <p class="svc-desc">Comprehensive head-to-toe assessment for your child's overall health and development milestones.</p>
+            <p class="svc-hover-hint">↻ Hover to see details</p>
+          </div>
+          <div class="svc-back t-blue">
+            <h4 class="svc-back-title">Child Health Checkup</h4>
+            <ul class="svc-back-list">
+              <li>✓ Height &amp; Weight Assessment</li>
+              <li>✓ Developmental Milestone Review</li>
+              <li>✓ Nutritional Counseling</li>
+              <li>✓ Physical Examination</li>
+              <li>✓ Lab Test Referrals</li>
+            </ul>
+            <a href="#appointment" class="svc-cta-link">Book Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="svc-card t-green" role="button" aria-label="Vaccination service">
+        <div class="svc-inner">
+          <div class="svc-front">
+            <div class="svc-icon">💉</div>
+            <h3 class="svc-title">Vaccination Program</h3>
+            <p class="svc-desc">Complete IAP-recommended immunization schedule with expert guidance for every age group.</p>
+            <p class="svc-hover-hint">↻ Hover to see details</p>
+          </div>
+          <div class="svc-back t-green">
+            <h4 class="svc-back-title">Vaccination Program</h4>
+            <ul class="svc-back-list">
+              <li>✓ IAP Standard Schedule</li>
+              <li>✓ Newborn to Adolescent</li>
+              <li>✓ Catch-up Vaccinations</li>
+              <li>✓ Travel Vaccines</li>
+              <li>✓ SMS Reminders</li>
+            </ul>
+            <a href="#appointment" class="svc-cta-link">Book Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="svc-card t-warm" role="button" aria-label="Growth Monitoring service">
+        <div class="svc-inner">
+          <div class="svc-front">
+            <div class="svc-icon">📈</div>
+            <h3 class="svc-title">Growth Monitoring</h3>
+            <p class="svc-desc">Regular tracking of physical and cognitive development using WHO growth charts and standards.</p>
+            <p class="svc-hover-hint">↻ Hover to see details</p>
+          </div>
+          <div class="svc-back t-warm">
+            <h4 class="svc-back-title">Growth Monitoring</h4>
+            <ul class="svc-back-list">
+              <li>✓ WHO Growth Chart Analysis</li>
+              <li>✓ BMI Tracking</li>
+              <li>✓ Cognitive Assessment</li>
+              <li>✓ Nutrition Planning</li>
+              <li>✓ Growth Reports</li>
+            </ul>
+            <a href="#appointment" class="svc-cta-link">Book Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="svc-card t-blue" role="button" aria-label="Eye Checkup service">
+        <div class="svc-inner">
+          <div class="svc-front">
+            <div class="svc-icon">👁️</div>
+            <h3 class="svc-title">Eye Checkup</h3>
+            <p class="svc-desc">Comprehensive pediatric eye examination to detect refractive errors, infections and other conditions.</p>
+            <p class="svc-hover-hint">↻ Hover to see details</p>
+          </div>
+          <div class="svc-back t-blue">
+            <h4 class="svc-back-title">Pediatric Eye Checkup</h4>
+            <ul class="svc-back-list">
+              <li>✓ Comprehensive Eye Exam</li>
+              <li>✓ Retinoscopy</li>
+              <li>✓ Color Vision Testing</li>
+              <li>✓ Eye Pressure Check</li>
+              <li>✓ Fundus Examination</li>
+            </ul>
+            <a href="#appointment" class="svc-cta-link">Book Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="svc-card t-purple" role="button" aria-label="Vision Testing service">
+        <div class="svc-inner">
+          <div class="svc-front">
+            <div class="svc-icon">🔍</div>
+            <h3 class="svc-title">Vision Testing</h3>
+            <p class="svc-desc">Detailed vision assessment and prescription of glasses or contact lenses tailored for children.</p>
+            <p class="svc-hover-hint">↻ Hover to see details</p>
+          </div>
+          <div class="svc-back t-purple">
+            <h4 class="svc-back-title">Vision Testing</h4>
+            <ul class="svc-back-list">
+              <li>✓ Snellen Chart Test</li>
+              <li>✓ Refraction Analysis</li>
+              <li>✓ Glasses Prescription</li>
+              <li>✓ Myopia Management</li>
+              <li>✓ Screen Time Advice</li>
+            </ul>
+            <a href="#appointment" class="svc-cta-link">Book Now →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="svc-card t-pink" role="button" aria-label="Pediatric Eye Care service">
+        <div class="svc-inner">
+          <div class="svc-front">
+            <div class="svc-icon">🩺</div>
+            <h3 class="svc-title">Pediatric Eye Care</h3>
+            <p class="svc-desc">Specialized treatment of squint, amblyopia (lazy eye), congenital conditions and eye surgeries.</p>
+            <p class="svc-hover-hint">↻ Hover to see details</p>
+          </div>
+          <div class="svc-back t-pink">
+            <h4 class="svc-back-title">Pediatric Eye Care</h4>
+            <ul class="svc-back-list">
+              <li>✓ Squint (Strabismus) Treatment</li>
+              <li>✓ Amblyopia (Lazy Eye) Therapy</li>
+              <li>✓ Congenital Cataract</li>
+              <li>✓ Eye Patching Therapy</li>
+              <li>✓ Minor Eye Surgeries</li>
+            </ul>
+            <a href="#appointment" class="svc-cta-link">Book Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     WHY CHOOSE US
+     ══════════════════════════════ -->
+<section id="why" class="section-pad" aria-labelledby="why-title">
+  <div class="container">
+    <div class="why-grid">
+      <!-- Visual -->
+      <div class="why-visual reveal-l">
+        <div class="why-img-main">
+          <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e743?w=800&h=600&fit=crop&auto=format&q=85" alt="Doctor caring for child at our clinic">
+        </div>
+        <div class="why-img-fl wif1">
+          <img src="https://images.unsplash.com/photo-1526887520775-4b14b8aed897?w=300&h=240&fit=crop&auto=format&q=80" alt="Baby checkup">
+        </div>
+        <div class="why-img-fl wif2">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=250&h=200&fit=crop&auto=format&q=80" alt="Vaccination">
+        </div>
+        <div class="why-badge-card">
+          <div class="why-badge-card-num">10+</div>
+          <div class="why-badge-card-lbl">Years of<br>Excellence</div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="why-content reveal-r">
+        <p class="section-label">Why Choose Us</p>
+        <h2 class="section-title" id="why-title">Navsari's <em>Most Trusted</em><br>Children's Clinic</h2>
+        <p class="section-desc">We combine pediatrics and ophthalmology under one roof — saving you time, reducing anxiety for your child, and ensuring coordinated, holistic care.</p>
+
+        <div class="why-features">
+          <div class="why-feature">
+            <div class="wf-icon wf-blue">🏥</div>
+            <div class="wf-text">
+              <h4>Dual-Specialty Under One Roof</h4>
+              <p>Child health and eye care in one visit — no need to go to multiple clinics. Unique advantage in Navsari.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="wf-icon wf-green">😊</div>
+            <div class="wf-text">
+              <h4>Child-Friendly Environment</h4>
+              <p>Our clinic is designed to be warm, playful, and stress-free, making children feel safe and comfortable.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="wf-icon wf-warm">🎓</div>
+            <div class="wf-text">
+              <h4>Highly Qualified Specialists</h4>
+              <p>MD Pediatrician + MS Eye Surgeon with 18+ combined years of experience in child healthcare.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="wf-icon wf-purple">💝</div>
+            <div class="wf-text">
+              <h4>Personalized, Family-Centered Care</h4>
+              <p>We involve parents at every step, providing complete guidance on nutrition, development, and prevention.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="wf-icon wf-teal">🕔</div>
+            <div class="wf-text">
+              <h4>Convenient Evening OPD</h4>
+              <p>Evening clinic from 5 PM so working parents can easily bring their children without missing work.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="wf-icon wf-pink">📱</div>
+            <div class="wf-text">
+              <h4>WhatsApp Consultation Support</h4>
+              <p>Quick follow-up support on WhatsApp for minor queries and vaccination reminders after visits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     GROWTH TRACKER (BONUS)
+     ══════════════════════════════ -->
+<section id="tracker" aria-labelledby="tracker-title">
+  <div class="container">
+    <div class="tracker-inner">
+      <!-- Chart -->
+      <div class="reveal-l">
+        <div class="tracker-chart-box">
+          <div class="tracker-chart-head">
+            <span class="tracker-chart-ttl">📊 Child Growth Chart</span>
+            <div class="tracker-legend">
+              <span class="tracker-legend-item"><span class="tl-dot" style="background:#2B9FD1;"></span>Boys</span>
+              <span class="tracker-legend-item"><span class="tl-dot" style="background:#EC4899;"></span>Girls</span>
+            </div>
+          </div>
+          <div class="tracker-tabs">
+            <button class="tracker-tab active" data-tab="height">📏 Height</button>
+            <button class="tracker-tab" data-tab="weight">⚖️ Weight</button>
+          </div>
+          <div style="overflow-x:auto;">
+            <svg id="tracker-svg" viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" style="min-width:320px;width:100%;height:200px;"></svg>
+          </div>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="tracker-content reveal-r">
+        <p class="section-label">Growth Monitoring</p>
+        <h3 id="tracker-title">Track Your Child's<br><em style="color:var(--secondary);font-style:normal;">Growth &amp; Development</em></h3>
+        <p>Regular monitoring of height, weight, and developmental milestones helps detect early issues and ensure your child is thriving at every stage.</p>
+        <div class="tracker-feats">
+          <div class="tracker-feat"><div class="tfi">📏</div>Height tracking from birth to 7 years</div>
+          <div class="tracker-feat"><div class="tfi">⚖️</div>Weight monitoring &amp; BMI analysis</div>
+          <div class="tracker-feat"><div class="tfi">🧠</div>Cognitive &amp; motor milestone checks</div>
+          <div class="tracker-feat"><div class="tfi">🥗</div>Personalized nutrition advice</div>
+          <div class="tracker-feat"><div class="tfi">📋</div>Detailed growth reports for parents</div>
+        </div>
+        <a href="#appointment" class="btn btn-green" style="margin-top:1.5rem;">📅 Schedule Growth Checkup</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     APPOINTMENT SECTION
+     ══════════════════════════════ -->
+<section id="appointment" class="section-pad" aria-labelledby="appt-title">
+  <div class="appt-pattern" aria-hidden="true"></div>
+  <div class="container">
+    <div class="appt-inner">
+      <!-- Content -->
+      <div class="appt-content reveal-l">
+        <p class="section-label">Book an Appointment</p>
+        <h2 class="section-title" id="appt-title">Ready to Give Your<br>Child the <em>Best Care?</em></h2>
+        <p class="section-desc">Book your appointment today and experience world-class pediatric and eye care right here in Navsari. Same-day appointments available!</p>
+        <div class="appt-infos">
+          <div class="appt-info-row"><div class="aii">📍</div>Opp. Avdhoot Eye Hospital, Asha Nagar, Navsari</div>
+          <div class="appt-info-row"><div class="aii">🕔</div>Evening OPD: Monday–Saturday, 5:00 PM – 8:30 PM</div>
+          <div class="appt-info-row"><div class="aii">🌅</div>Morning OPD: Mon, Thu: 11:00 AM – 1:00 PM</div>
+          <div class="appt-info-row"><div class="aii">📞</div><a href="tel:+912637258994" style="color:rgba(255,255,255,0.9);">02637-258994</a></div>
+          <div class="appt-info-row"><div class="aii">✅</div>No prior appointment needed for emergencies</div>
+        </div>
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="https://wa.me/919898898989" class="btn btn-wa" target="_blank" rel="noopener">
+            💬 Chat on WhatsApp
+          </a>
+          <a href="tel:+912637258994" class="btn" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.3);">📞 Call Clinic</a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal-r">
+        <div class="appt-form-card">
+          <h3 class="appt-form-title">📅 Book Your Appointment</h3>
+          <form id="appt-form" novalidate>
+            <div class="form-grid">
+              <div class="fg">
+                <label class="flabel" for="f-name">Parent / Child Name *</label>
+                <input class="finput" id="f-name" type="text" placeholder="e.g. Ramesh Patel" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="flabel" for="f-phone">Phone Number *</label>
+                <input class="finput" id="f-phone" type="tel" placeholder="+91 98765 43210" required autocomplete="tel">
+              </div>
+              <div class="fg">
+                <label class="flabel" for="f-age">Child's Age</label>
+                <input class="finput" id="f-age" type="text" placeholder="e.g. 3 years, 6 months">
+              </div>
+              <div class="fg">
+                <label class="flabel" for="f-doctor">Preferred Doctor</label>
+                <select class="fselect" id="f-doctor">
+                  <option value="">Any Available</option>
+                  <option>Dr. Mrunal Shah (Pediatrician)</option>
+                  <option>Dr. Vibha Shah (Eye Surgeon)</option>
+                </select>
+              </div>
+              <div class="fg full">
+                <label class="flabel" for="f-service">Service Needed</label>
+                <select class="fselect" id="f-service">
+                  <option value="">Select a service...</option>
+                  <option>Child Health Checkup</option>
+                  <option>Vaccination</option>
+                  <option>Growth Monitoring</option>
+                  <option>Eye Checkup</option>
+                  <option>Vision Testing &amp; Glasses</option>
+                  <option>Squint / Lazy Eye Treatment</option>
+                  <option>Newborn Checkup</option>
+                  <option>General Consultation</option>
+                </select>
+              </div>
+              <div class="fg full">
+                <label class="flabel" for="f-msg">Additional Notes (Optional)</label>
+                <input class="finput" id="f-msg" type="text" placeholder="Any specific concerns...">
+              </div>
+            </div>
+            <button type="submit" class="form-submit">✅ Confirm Appointment</button>
+            <div class="form-divider">or</div>
+            <button type="button" class="form-wa-btn wa-book-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.139.565 4.147 1.547 5.878L0 24l6.3-1.526A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              Book via WhatsApp Instantly
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     TESTIMONIALS
+     ══════════════════════════════ -->
+<section id="testimonials" class="section-pad" aria-labelledby="testi-title">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:0.5rem;">
+      <p class="section-label">What Parents Say</p>
+      <h2 class="section-title" id="testi-title">Loved by <em>5,000+ Families</em><br>across Navsari</h2>
+    </div>
+    <div class="testi-carousel">
+      <div class="testi-track-wrap">
+        <div class="testi-track" id="testi-track">
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testi-text">"Dr. Mrunal is simply wonderful with children. My son was very scared of doctors but after meeting him, he actually wanted to come back! The clinic is clean, calm and genuinely child-friendly."</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&auto=format&q=80" alt="Priya Mehta"></div>
+                <div>
+                  <p class="testi-name">Priya Mehta</p>
+                  <p class="testi-meta">Mother of 4-year-old • Navsari</p>
+                  <p class="testi-verified">✓ Verified Patient</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testi-text">"Dr. Vibha detected my daughter's lazy eye early. Thanks to the treatment, her vision has improved dramatically. We are so grateful. Best pediatric eye doctor in Navsari without a doubt!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1531983955165-e2c3ba14609a?w=100&h=100&fit=crop&auto=format&q=80" alt="Ramesh Patel"></div>
+                <div>
+                  <p class="testi-name">Ramesh Patel</p>
+                  <p class="testi-meta">Father of 6-year-old • Navsari</p>
+                  <p class="testi-verified">✓ Verified Patient</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testi-text">"Best clinic for children in Navsari! The fact that we get both a pediatrician and eye doctor at the same place is incredible. Saves so much time and the doctors are very cooperative."</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&auto=format&q=80" alt="Sneha Desai"></div>
+                <div>
+                  <p class="testi-name">Sneha Desai</p>
+                  <p class="testi-meta">Mother of twins • Navsari</p>
+                  <p class="testi-verified">✓ Verified Patient</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testi-text">"Great doctor, very caring. Dr. Mrunal explains everything clearly and gives very effective medicines. My child recovered from a serious infection quickly. Highly recommended for all parents!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?w=100&h=100&fit=crop&auto=format&q=80" alt="Kiran Joshi"></div>
+                <div>
+                  <p class="testi-name">Kiran Joshi</p>
+                  <p class="testi-meta">Parent • Gandevi, Navsari</p>
+                  <p class="testi-verified">✓ Verified Patient</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testi-text">"The evening OPD timing is a lifesaver for working parents like us. Excellent staff, clean environment, and Dr. Vibha is so patient and gentle during eye exams. My kids are not scared anymore!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&h=100&fit=crop&auto=format&q=80" alt="Vijay Shah"></div>
+                <div>
+                  <p class="testi-name">Vijay Shah</p>
+                  <p class="testi-meta">Father of 3 • Navsari City</p>
+                  <p class="testi-verified">✓ Verified Patient</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testi-text">"Vaccination schedule is very well maintained. The staff sends reminders on WhatsApp and the clinic keeps excellent records. We've been bringing our child here since birth. 10/10 service!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&auto=format&q=80" alt="Anita Kapoor"></div>
+                <div>
+                  <p class="testi-name">Anita Kapoor</p>
+                  <p class="testi-meta">Mother • Chikhli, Navsari</p>
+                  <p class="testi-verified">✓ Verified Patient</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button class="tctl-btn" id="testi-prev" aria-label="Previous testimonial">‹</button>
+        <div class="testi-dots">
+          <div class="tdot on"></div>
+          <div class="tdot"></div>
+          <div class="tdot"></div>
+          <div class="tdot"></div>
+        </div>
+        <button class="tctl-btn" id="testi-next" aria-label="Next testimonial">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     GALLERY SECTION
+     ══════════════════════════════ -->
+<section id="gallery" class="section-pad" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:0.5rem;">
+      <p class="section-label">Our Clinic</p>
+      <h2 class="section-title" id="gallery-title">A Glimpse Into<br>Our <em>Caring World</em></h2>
+      <p class="section-desc">A peek into our warm, child-friendly clinic spaces and heartfelt doctor-patient moments.</p>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <div class="gitem tall reveal"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=700&fit=crop&auto=format&q=80" alt="Doctor with child"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d1"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop&auto=format&q=80" alt="Vaccination"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d2"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=300&fit=crop&auto=format&q=80" alt="Medical equipment"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d3"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop&auto=format&q=80" alt="Doctor consultation"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d4"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=300&fit=crop&auto=format&q=80" alt="Happy children"><div class="goverlay">🔍</div></div>
+
+      <div class="gitem wide reveal"><img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e743?w=700&h=300&fit=crop&auto=format&q=80" alt="Pediatric care"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d1"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=300&fit=crop&auto=format&q=80" alt="Doctor hands"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d2"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&fit=crop&auto=format&q=80" alt="Eye doctor"><div class="goverlay">🔍</div></div>
+
+      <div class="gitem reveal d1"><img src="https://images.unsplash.com/photo-1526887520775-4b14b8aed897?w=400&h=300&fit=crop&auto=format&q=80" alt="Baby care"><div class="goverlay">🔍</div></div>
+      <div class="gitem tall reveal d2"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=700&fit=crop&auto=format&q=80" alt="Healthcare professional"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d3"><img src="https://images.unsplash.com/photo-1612531386530-97286d97c2d2?w=400&h=300&fit=crop&auto=format&q=80" alt="Eye examination"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d4"><img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=300&fit=crop&auto=format&q=80" alt="Medical clinic"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d5"><img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=400&h=300&fit=crop&auto=format&q=80" alt="Child playing"><div class="goverlay">🔍</div></div>
+
+      <div class="gitem reveal"><img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&h=300&fit=crop&auto=format&q=80" alt="Child with glasses"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d1"><img src="https://images.unsplash.com/photo-1582560475093-ba66accbc424?w=400&h=300&fit=crop&auto=format&q=80" alt="Healthcare"><div class="goverlay">🔍</div></div>
+      <div class="gitem wide reveal d2"><img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=700&h=300&fit=crop&auto=format&q=80" alt="Pediatric care"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d3"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=300&fit=crop&auto=format&q=80" alt="Doctor"><div class="goverlay">🔍</div></div>
+
+      <div class="gitem reveal"><img src="https://images.unsplash.com/photo-1555685812-4b8f286b0f97?w=400&h=300&fit=crop&auto=format&q=80" alt="Child activity"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d1"><img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=400&h=300&fit=crop&auto=format&q=80" alt="Parent and child"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d2"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop&auto=format&q=80" alt="Family health"><div class="goverlay">🔍</div></div>
+      <div class="gitem tall reveal d3"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=700&fit=crop&auto=format&q=80" alt="Happy patient"><div class="goverlay">🔍</div></div>
+      <div class="gitem reveal d4"><img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?w=400&h=300&fit=crop&auto=format&q=80" alt="Parent"><div class="goverlay">🔍</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     VACCINATION REMINDER BANNER
+     ══════════════════════════════ -->
+<section aria-label="Vaccination reminder" style="padding:0 0 3rem;">
+  <div class="container">
+    <div class="vax-banner reveal">
+      <div class="vax-icon" aria-hidden="true">💉</div>
+      <div class="vax-content">
+        <h3>Is Your Child's Vaccination Up to Date?</h3>
+        <p>Don't miss critical immunizations. Follow the IAP vaccination schedule recommended by Dr. Mrunal Shah. Contact us for a personalized vaccination plan for your child.</p>
+      </div>
+      <button class="vax-btn" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">
+        📅 Check Vaccination Schedule
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     LOCATION & CONTACT
+     ══════════════════════════════ -->
+<section id="location" class="section-pad" aria-labelledby="location-title">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:0.5rem;">
+      <p class="section-label">Find Us</p>
+      <h2 class="section-title" id="location-title">Visit Our <em>Clinic</em><br>in Navsari</h2>
+    </div>
+    <div class="location-grid">
+      <!-- Info -->
+      <div class="loc-cards">
+        <div class="loc-card reveal">
+          <div class="lci lci-blue">📍</div>
+          <div class="loc-info">
+            <h4>Clinic Address</h4>
+            <p>Opp. Avdhoot Eye Hospital,<br>Asha Nagar, Navsari,<br>Gujarat – 396445, India</p>
+          </div>
+        </div>
+        <div class="loc-card reveal d1">
+          <div class="lci lci-green">🕒</div>
+          <div class="loc-info">
+            <h4>Clinic Timings</h4>
+            <div class="timing-rows">
+              <div class="trow"><span class="trow-day">Mon, Thu</span><span class="trow-time">11:00 AM – 1:00 PM &nbsp;&amp;&nbsp; 5:00–8:30 PM <span class="t-open">Open</span></span></div>
+              <div class="trow"><span class="trow-day">Tue</span><span class="trow-time">11:00 AM – 1:00 PM <span class="t-open">Open</span></span></div>
+              <div class="trow"><span class="trow-day">Wed, Fri, Sat</span><span class="trow-time">5:00 PM – 8:30 PM <span class="t-open">Open</span></span></div>
+              <div class="trow"><span class="trow-day">Sunday</span><span class="trow-time">12:00 AM – 1:00 PM <span class="t-open">Open</span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="loc-card reveal d2">
+          <div class="lci lci-warm">📞</div>
+          <div class="loc-info">
+            <h4>Contact Us</h4>
+            <p><a href="tel:+912637258994">02637 – 258994</a></p>
+            <p style="margin-top:0.3rem;"><a href="tel:+919898898989">+91 98988 98989</a></p>
+            <p style="margin-top:0.3rem;"><a href="mailto:kidsclinic.navsari@gmail.com">kidsclinic.navsari@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="loc-card reveal d3">
+          <div class="lci lci-purple">🚘</div>
+          <div class="loc-info">
+            <h4>How to Reach</h4>
+            <p>Located in Asha Nagar, directly opposite to Avdhoot Eye Hospital. Ample parking available. Accessible by auto-rickshaw from Navsari Railway Station (10 min).</p>
+          </div>
+        </div>
+      </div>
+      <!-- Map -->
+      <div class="loc-map reveal-r">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.069!2d72.9230882!3d20.9499905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0e3bbb43ab88f%3A0xda43f019f145419!2sKIDS%20CARE%20CLINIC!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+          allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Kid's Care Clinic location on Google Maps">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     💉 VACCINATION TRACKER
+     ══════════════════════════════════════════════ -->
+<section id="vax-tracker" class="section-pad" aria-labelledby="vax-title">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">Interactive Tool</p>
+      <h2 class="section-title" id="vax-title">💉 Vaccination <em>Tracker</em></h2>
+      <p class="section-desc">Enter your child's date of birth to see the complete IAP-recommended vaccine schedule. Track completed vaccines and upcoming due dates.</p>
+    </div>
+
+    <!-- DOB Input -->
+    <div class="vt-dob-card reveal">
+      <div class="vt-dob-inner">
+        <div class="vt-dob-icon">👶</div>
+        <div class="vt-dob-fields">
+          <label class="flabel">Child's Date of Birth</label>
+          <div class="vt-dob-row">
+            <input type="date" id="vt-dob" class="finput" max="" placeholder="Select birth date">
+            <select id="vt-gender" class="fselect">
+              <option value="boy">Boy 👦</option>
+              <option value="girl">Girl 👧</option>
+            </select>
+            <button class="btn btn-primary" id="vt-calc-btn" onclick="calcVaccineSchedule()">📊 Show Schedule</button>
+          </div>
+        </div>
+      </div>
+      <!-- Quick Age Buttons -->
+      <div class="vt-quick-ages">
+        <span style="font-size:0.78rem;font-weight:700;color:var(--text-light);">Quick select:</span>
+        <button class="vt-quick-btn" onclick="setQuickAge(0)">Newborn</button>
+        <button class="vt-quick-btn" onclick="setQuickAge(2)">2 months</button>
+        <button class="vt-quick-btn" onclick="setQuickAge(6)">6 months</button>
+        <button class="vt-quick-btn" onclick="setQuickAge(12)">1 year</button>
+        <button class="vt-quick-btn" onclick="setQuickAge(18)">18 months</button>
+        <button class="vt-quick-btn" onclick="setQuickAge(48)">4 years</button>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="vt-progress-wrap reveal" id="vt-progress-wrap" style="display:none;">
+      <div class="vt-progress-header">
+        <div>
+          <span class="vt-progress-label">Vaccination Progress</span>
+          <span class="vt-progress-name" id="vt-child-age-label"></span>
+        </div>
+        <div class="vt-progress-nums">
+          <span id="vt-done-count" class="vt-pnum green">0</span>
+          <span style="color:var(--text-light);font-size:0.85rem;"> done · </span>
+          <span id="vt-due-count" class="vt-pnum orange">0</span>
+          <span style="color:var(--text-light);font-size:0.85rem;"> due · </span>
+          <span id="vt-upcoming-count" class="vt-pnum blue">0</span>
+          <span style="color:var(--text-light);font-size:0.85rem;"> upcoming</span>
+        </div>
+      </div>
+      <div class="vt-progress-bar-bg">
+        <div class="vt-progress-bar-fill" id="vt-progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Schedule Grid -->
+    <div id="vt-schedule" class="vt-schedule"></div>
+
+    <!-- Legend -->
+    <div class="vt-legend reveal" id="vt-legend" style="display:none;">
+      <span class="vt-leg-item"><span class="vt-leg-dot done"></span> Done</span>
+      <span class="vt-leg-item"><span class="vt-leg-dot due"></span> Due Now / Overdue</span>
+      <span class="vt-leg-item"><span class="vt-leg-dot upcoming"></span> Upcoming</span>
+      <span class="vt-leg-item"><span class="vt-leg-dot optional"></span> Optional / Recommended</span>
+      <a href="#appointment" class="btn btn-primary btn-sm" style="margin-left:auto;">📅 Book Vaccination Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     🤒 SYMPTOMS GUIDE
+     ══════════════════════════════════════════════ -->
+<section id="symptoms" class="section-pad" style="background:var(--bg);" aria-labelledby="symp-title">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">Parent's Reference Guide</p>
+      <h2 class="section-title" id="symp-title">🤒 Symptoms <em>Guide</em></h2>
+      <p class="section-desc">Search any symptom to understand severity, home care tips, and when to visit the clinic immediately. Always consult a doctor for diagnosis.</p>
+    </div>
+
+    <!-- Search + Filter -->
+    <div class="symp-controls reveal">
+      <div class="symp-search-wrap">
+        <span class="symp-search-icon">🔍</span>
+        <input type="text" id="symp-search" class="symp-search" placeholder="Search symptom e.g. fever, rash, cough, eye redness…" oninput="filterSymptoms()">
+        <button class="symp-clear" id="symp-clear" onclick="clearSympSearch()" style="display:none;">✕</button>
+      </div>
+      <div class="symp-filters" id="symp-filters">
+        <button class="symp-filter active" data-filter="all" onclick="setSympFilter('all',this)">All</button>
+        <button class="symp-filter" data-filter="mild" onclick="setSympFilter('mild',this)">🟢 Mild</button>
+        <button class="symp-filter" data-filter="moderate" onclick="setSympFilter('moderate',this)">🟡 Moderate</button>
+        <button class="symp-filter" data-filter="severe" onclick="setSympFilter('severe',this)">🔴 Urgent</button>
+        <button class="symp-filter" data-filter="eye" onclick="setSympFilter('eye',this)">👁️ Eye</button>
+      </div>
+    </div>
+
+    <!-- Symptom Cards -->
+    <div class="symp-grid" id="symp-grid"></div>
+
+    <!-- Symptom Detail Modal -->
+    <div id="symp-modal" class="symp-modal" role="dialog" aria-modal="true">
+      <div class="symp-modal-box">
+        <button class="symp-modal-close" onclick="closeSympModal()">✕</button>
+        <div id="symp-modal-content"></div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="symp-disclaimer reveal">
+      <span>⚕️</span>
+      <p>This guide is for general reference only and does not replace professional medical advice. For any serious or worsening symptoms, please visit Kid's Care Clinic immediately or call <strong>02637-258994</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     📏 BMI CALCULATOR + 💊 DOSE GUIDE  (side by side)
+     ══════════════════════════════════════════════ -->
+<section id="bmi-calc" class="section-pad" aria-labelledby="tools-title">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">Health Calculators</p>
+      <h2 class="section-title" id="tools-title">Smart <em>Health Tools</em><br>for Parents</h2>
+      <p class="section-desc">Quick, easy calculators to help you monitor your child's growth and understand medication doses. Always consult Dr. Mrunal Shah for personalized advice.</p>
+    </div>
+
+    <div class="tools-dual-grid">
+
+      <!-- BMI CALCULATOR -->
+      <div class="tool-card reveal-l" id="dose-calc-anchor">
+        <div class="tool-card-header" style="background:var(--grad-primary);">
+          <span class="tool-card-icon">📏</span>
+          <div>
+            <h3 class="tool-card-title">Child BMI Calculator</h3>
+            <p class="tool-card-sub">Ages 2–18 years</p>
+          </div>
+        </div>
+        <div class="tool-card-body">
+          <div class="form-grid" style="gap:0.85rem;">
+            <div class="fg">
+              <label class="flabel">Age (years)</label>
+              <input class="finput" type="number" id="bmi-age" min="2" max="18" placeholder="e.g. 5" oninput="calcBMI()">
+            </div>
+            <div class="fg">
+              <label class="flabel">Gender</label>
+              <select class="fselect" id="bmi-gender" onchange="calcBMI()">
+                <option value="boy">Boy</option>
+                <option value="girl">Girl</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="flabel">Height (cm)</label>
+              <input class="finput" type="number" id="bmi-height" min="50" max="200" placeholder="e.g. 110" oninput="calcBMI()">
+            </div>
+            <div class="fg">
+              <label class="flabel">Weight (kg)</label>
+              <input class="finput" type="number" id="bmi-weight" min="2" max="120" placeholder="e.g. 18" oninput="calcBMI()">
+            </div>
+          </div>
+
+          <div class="bmi-result" id="bmi-result" style="display:none;">
+            <div class="bmi-gauge-wrap">
+              <div class="bmi-gauge">
+                <div class="bmi-gauge-fill" id="bmi-gauge-fill"></div>
+                <div class="bmi-gauge-needle" id="bmi-gauge-needle"></div>
+              </div>
+              <div class="bmi-gauge-labels">
+                <span>Under</span><span>Normal</span><span>Over</span><span>Obese</span>
+              </div>
+            </div>
+            <div class="bmi-result-box" id="bmi-result-box">
+              <div class="bmi-num" id="bmi-value">—</div>
+              <div class="bmi-category" id="bmi-category">—</div>
+              <div class="bmi-advice" id="bmi-advice">—</div>
+            </div>
+          </div>
+          <a href="#appointment" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1rem;">👨‍⚕️ Discuss with Dr. Mrunal</a>
+        </div>
+      </div>
+
+      <!-- DOSE CALCULATOR -->
+      <div class="tool-card reveal-r" id="dose-calc">
+        <div class="tool-card-header" style="background:var(--grad-secondary);">
+          <span class="tool-card-icon">💊</span>
+          <div>
+            <h3 class="tool-card-title">Paediatric Dose Guide</h3>
+            <p class="tool-card-sub">Paracetamol &amp; Ibuprofen</p>
+          </div>
+        </div>
+        <div class="tool-card-body">
+          <div class="dose-notice">
+            ⚕️ <strong>Always consult your doctor before giving any medication.</strong> This guide is for reference only.
+          </div>
+          <div class="form-grid" style="gap:0.85rem;">
+            <div class="fg full">
+              <label class="flabel">Child's Weight (kg)</label>
+              <input class="finput" type="number" id="dose-weight" min="2" max="60" placeholder="e.g. 15 kg" oninput="calcDose()">
+            </div>
+            <div class="fg full">
+              <label class="flabel">Medication</label>
+              <select class="fselect" id="dose-med" onchange="calcDose()">
+                <option value="para">Paracetamol (Crocin / Calpol)</option>
+                <option value="ibu">Ibuprofen (Brufen / Advil)</option>
+              </select>
+            </div>
+          </div>
+          <div class="dose-result" id="dose-result" style="display:none;">
+            <div class="dose-rows" id="dose-rows"></div>
+          </div>
+          <div class="dose-rules">
+            <div class="dose-rule" id="dose-rule-text">
+              <strong>When to give Paracetamol:</strong> Fever above 38°C, teething pain, minor aches. Give every 4–6 hours, max 4 doses/day. Never exceed recommended dose.
+            </div>
+          </div>
+          <a href="#appointment" class="btn btn-green" style="width:100%;justify-content:center;margin-top:1rem;">👩‍⚕️ Consult Dr. Mrunal Shah</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     🚨 EMERGENCY FIRST AID GUIDE
+     ══════════════════════════════════════════════ -->
+<section id="emergency" class="section-pad" style="background:var(--bg);" aria-labelledby="emerg-title">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label" style="color:#DC2626;">🚨 Emergency Guide</p>
+      <h2 class="section-title" id="emerg-title">What to Do in a<br><span style="color:#DC2626;">Child Emergency</span></h2>
+      <p class="section-desc">Quick first-aid reference for common paediatric emergencies. Click any card for step-by-step guidance. <strong>Call 108 for life-threatening emergencies.</strong></p>
+    </div>
+
+    <!-- Emergency Hotline Banner -->
+    <div class="emerg-hotline reveal">
+      <div class="emerg-hotline-left">
+        <span class="emerg-pulse-dot"></span>
+        <div>
+          <strong>Kid's Care Clinic Emergency Line</strong>
+          <p>For non-life-threatening paediatric emergencies</p>
+        </div>
+      </div>
+      <div class="emerg-hotline-right">
+        <a href="tel:+912637258994" class="emerg-call-btn">📞 02637-258994</a>
+        <a href="tel:108" class="emerg-call-btn red">🚑 108 Ambulance</a>
+      </div>
+    </div>
+
+    <!-- Emergency Cards Accordion -->
+    <div class="emerg-grid" id="emerg-grid">
+
+      <div class="emerg-card red-card reveal" onclick="toggleEmerg(this)">
+        <div class="emerg-card-head">
+          <div class="emerg-card-left">
+            <span class="emerg-badge red-badge">🚨 CALL 108</span>
+            <h4>High Fever (Above 104°F / 40°C)</h4>
+            <p class="emerg-sub">Especially if child is unresponsive, has seizures, or has neck stiffness</p>
+          </div>
+          <span class="emerg-toggle-icon">+</span>
+        </div>
+        <div class="emerg-body">
+          <ol class="emerg-steps">
+            <li><span class="es-num">1</span><div><strong>Remove extra clothing.</strong> Keep the child in light cotton clothing. Do not bundle up.</div></li>
+            <li><span class="es-num">2</span><div><strong>Lukewarm sponge bath.</strong> Use a damp cloth on forehead, armpits, and groin. Never use ice cold water.</div></li>
+            <li><span class="es-num">3</span><div><strong>Give Paracetamol</strong> (15 mg/kg) if child is conscious and can swallow. See Dose Guide above.</div></li>
+            <li><span class="es-num">4</span><div><strong>Keep child hydrated.</strong> Offer ORS, water, or coconut water frequently in small sips.</div></li>
+            <li><span class="es-num">5</span><div><strong>Rush to clinic or call 108</strong> if fever persists above 104°F or child has convulsions.</div></li>
+          </ol>
+          <div class="emerg-warning">⚠️ Do NOT give Aspirin to children — it can cause Reye's Syndrome.</div>
+        </div>
+      </div>
+
+      <div class="emerg-card orange-card reveal d1" onclick="toggleEmerg(this)">
+        <div class="emerg-card-head">
+          <div class="emerg-card-left">
+            <span class="emerg-badge orange-badge">🏥 VISIT CLINIC</span>
+            <h4>Febrile Seizure (Fit with Fever)</h4>
+            <p class="emerg-sub">Sudden jerky movements, stiffness, eyes rolling, temporary unresponsiveness</p>
+          </div>
+          <span class="emerg-toggle-icon">+</span>
+        </div>
+        <div class="emerg-body">
+          <ol class="emerg-steps">
+            <li><span class="es-num">1</span><div><strong>Stay calm.</strong> Most febrile seizures last less than 5 minutes and stop on their own.</div></li>
+            <li><span class="es-num">2</span><div><strong>Lay child on a flat, safe surface</strong> on their side (recovery position). Remove nearby sharp objects.</div></li>
+            <li><span class="es-num">3</span><div><strong>Do NOT restrain the child</strong> or put anything in their mouth. Do not give water during the seizure.</div></li>
+            <li><span class="es-num">4</span><div><strong>Time the seizure.</strong> Note start and end time — tell the doctor this information.</div></li>
+            <li><span class="es-num">5</span><div><strong>After the seizure:</strong> Child may be sleepy — this is normal. Visit Kid's Care Clinic immediately after.</div></li>
+          </ol>
+          <div class="emerg-warning">⚠️ Call 108 if seizure lasts more than 5 minutes or child does not regain consciousness.</div>
+        </div>
+      </div>
+
+      <div class="emerg-card red-card reveal d2" onclick="toggleEmerg(this)">
+        <div class="emerg-card-head">
+          <div class="emerg-card-left">
+            <span class="emerg-badge red-badge">🚨 CALL 108</span>
+            <h4>Choking / Breathing Difficulty</h4>
+            <p class="emerg-sub">Child cannot breathe, cough or speak, turns blue, panicking</p>
+          </div>
+          <span class="emerg-toggle-icon">+</span>
+        </div>
+        <div class="emerg-body">
+          <ol class="emerg-steps">
+            <li><span class="es-num">1</span><div><strong>For infants under 1 year:</strong> Give 5 back blows between shoulder blades, then 5 chest thrusts. Repeat.</div></li>
+            <li><span class="es-num">2</span><div><strong>For children over 1 year:</strong> Give 5 abdominal thrusts (Heimlich maneuver) from behind the child.</div></li>
+            <li><span class="es-num">3</span><div><strong>Call 108 immediately</strong> while performing maneuvers. Keep trying until obstruction is cleared or help arrives.</div></li>
+            <li><span class="es-num">4</span><div><strong>If child becomes unconscious:</strong> Begin CPR and continue until ambulance arrives.</div></li>
+            <li><span class="es-num">5</span><div><strong>Visit clinic after clearing</strong> to ensure no damage to throat or airway.</div></li>
+          </ol>
+          <div class="emerg-warning">⚠️ Never perform blind finger sweeps inside the mouth — it can push the object deeper.</div>
+        </div>
+      </div>
+
+      <div class="emerg-card blue-card reveal d3" onclick="toggleEmerg(this)">
+        <div class="emerg-card-head">
+          <div class="emerg-card-left">
+            <span class="emerg-badge blue-badge">👁️ VISIT EYE DOCTOR</span>
+            <h4>Eye Injury / Foreign Body in Eye</h4>
+            <p class="emerg-sub">Object in eye, chemical splash, impact injury, sudden vision change</p>
+          </div>
+          <span class="emerg-toggle-icon">+</span>
+        </div>
+        <div class="emerg-body">
+          <ol class="emerg-steps">
+            <li><span class="es-num">1</span><div><strong>Do NOT rub the eye.</strong> This can worsen the injury. Keep child's hands away from eye.</div></li>
+            <li><span class="es-num">2</span><div><strong>For foreign body:</strong> Flush eye gently with clean water or saline for 10–15 minutes from inner corner outward.</div></li>
+            <li><span class="es-num">3</span><div><strong>For chemical splash:</strong> Flush immediately with large amounts of water for 20 minutes. Call 108 and visit clinic urgently.</div></li>
+            <li><span class="es-num">4</span><div><strong>For impact injury:</strong> Apply a cold compress (not ice directly on eye). Do not apply pressure.</div></li>
+            <li><span class="es-num">5</span><div><strong>Visit Dr. Vibha Shah immediately.</strong> Eye injuries can worsen rapidly without proper treatment.</div></li>
+          </ol>
+          <div class="emerg-warning">⚠️ Any eye injury in a child is urgent. Contact Kid's Care Clinic at 02637-258994 immediately.</div>
+        </div>
+      </div>
+
+      <div class="emerg-card orange-card reveal d4" onclick="toggleEmerg(this)">
+        <div class="emerg-card-head">
+          <div class="emerg-card-left">
+            <span class="emerg-badge red-badge">🚨 CALL 108</span>
+            <h4>Accidental Poisoning / Swallowed Object</h4>
+            <p class="emerg-sub">Child swallowed medication, household chemical, sharp object, or coin</p>
+          </div>
+          <span class="emerg-toggle-icon">+</span>
+        </div>
+        <div class="emerg-body">
+          <ol class="emerg-steps">
+            <li><span class="es-num">1</span><div><strong>Stay calm. Do NOT induce vomiting</strong> unless instructed by a doctor — it can cause more harm with corrosives.</div></li>
+            <li><span class="es-num">2</span><div><strong>Identify the substance.</strong> Save the container or note the name of medication, quantity, and time of ingestion.</div></li>
+            <li><span class="es-num">3</span><div><strong>Call 108 or Poison Control.</strong> In India: 1800-11-6117 (National Poison Control). Follow their instructions.</div></li>
+            <li><span class="es-num">4</span><div><strong>For sharp objects or coins:</strong> Rush to nearest hospital. Most pass naturally but X-ray is required to confirm.</div></li>
+            <li><span class="es-num">5</span><div><strong>Visit Kid's Care Clinic</strong> for follow-up even if child appears fine after the incident.</div></li>
+          </ol>
+          <div class="emerg-warning">⚠️ Keep all medicines, cleaning products and small objects out of reach of children at all times.</div>
+        </div>
+      </div>
+
+      <div class="emerg-card green-card reveal d5" onclick="toggleEmerg(this)">
+        <div class="emerg-card-head">
+          <div class="emerg-card-left">
+            <span class="emerg-badge green-badge">🏠 HOME CARE</span>
+            <h4>Severe Diarrhea &amp; Dehydration</h4>
+            <p class="emerg-sub">More than 5–6 loose stools/day, dry mouth, no tears, sunken eyes, extreme weakness</p>
+          </div>
+          <span class="emerg-toggle-icon">+</span>
+        </div>
+        <div class="emerg-body">
+          <ol class="emerg-steps">
+            <li><span class="es-num">1</span><div><strong>Start ORS immediately.</strong> Give WHO-recommended ORS (Electral / Enerzal) in small frequent sips — 50–100 ml after each loose stool.</div></li>
+            <li><span class="es-num">2</span><div><strong>Continue breastfeeding</strong> if child is on breast milk. Do not stop feeds during diarrhea.</div></li>
+            <li><span class="es-num">3</span><div><strong>Give Zinc tablets</strong> (as prescribed) for 14 days to reduce severity and duration of diarrhea.</div></li>
+            <li><span class="es-num">4</span><div><strong>Watch for danger signs:</strong> Blood in stool, high fever, signs of severe dehydration (no urination for 6+ hours, sunken eyes).</div></li>
+            <li><span class="es-num">5</span><div><strong>Visit clinic</strong> if diarrhea doesn't improve in 24 hours or child shows signs of dehydration.</div></li>
+          </ol>
+          <div class="emerg-warning" style="background:#F0FDF4;border-color:#86EFAC;color:#166534;">✅ ORS is life-saving — always keep a packet at home for emergencies.</div>
+        </div>
+      </div>
+
+    </div><!-- end emerg-grid -->
+
+    <div class="emerg-footer-note reveal">
+      <p>📌 <strong>Save this number:</strong> Kid's Care Clinic — <a href="tel:+912637258994"><strong>02637-258994</strong></a> · For life-threatening emergencies always call <a href="tel:108"><strong>108</strong></a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════════════════
+     FOOTER
+     ══════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">🏥</div>
+          <div>
+            <strong>Kid's Care Clinic</strong>
+            <span>Child &amp; Eye Care Center</span>
+          </div>
+        </div>
+        <p>Providing compassionate, expert pediatric and eye care to the children of Navsari since 2014. Your child's health is our greatest mission.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook" class="fsoc">f</a>
+          <a href="#" aria-label="Instagram" class="fsoc">📸</a>
+          <a href="https://wa.me/919898898989" aria-label="WhatsApp" class="fsoc" target="_blank" rel="noopener">💬</a>
+          <a href="#" aria-label="YouTube" class="fsoc">▶</a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about">→ Our Doctors</a></li>
+          <li><a href="#services">→ Services</a></li>
+          <li><a href="#why">→ Why Choose Us</a></li>
+          <li><a href="#gallery">→ Gallery</a></li>
+          <li><a href="#appointment">→ Book Appointment</a></li>
+          <li><a href="#location">→ Location &amp; Contact</a></li>
+        </ul>
+      </div>
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">→ Child Health Checkup</a></li>
+          <li><a href="#services">→ Vaccination Program</a></li>
+          <li><a href="#services">→ Growth Monitoring</a></li>
+          <li><a href="#services">→ Eye Checkup</a></li>
+          <li><a href="#services">→ Vision Testing</a></li>
+          <li><a href="#services">→ Pediatric Eye Care</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+912637258994">📞 02637-258994</a></li>
+          <li><a href="tel:+919898898989">📱 +91 98988 98989</a></li>
+          <li><a href="https://wa.me/919898898989" target="_blank">💬 WhatsApp Us</a></li>
+          <li><a href="mailto:kidsclinic.navsari@gmail.com">✉️ Email Us</a></li>
+          <li><a href="#location">📍 Asha Nagar, Navsari</a></li>
+          <li><a href="#">⏰ Evening OPD: 5–8:30 PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Kid's Care Clinic. All rights reserved. | Dr. Mrunal Shah &amp; Dr. Vibha Shah</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
